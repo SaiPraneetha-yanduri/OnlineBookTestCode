@@ -1,0 +1,103 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "set property",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 241822070,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "driver path",
+            "match": {
+              "location": "bookStoreSteps.driver_path()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "To validate the users in online book application",
+        "description": "",
+        "id": "smoke-testing;to-validate-the-users-in-online-book-application;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5292929,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "a user \"usertype\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "usertype",
+                  "offset": 8
+                }
+              ],
+              "location": "bookStoreSteps.a_user(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 29074,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "request for users",
+            "match": {
+              "location": "bookStoreSteps.request_for_users()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3851452120,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "validate the status \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 21
+                }
+              ],
+              "location": "bookStoreSteps.validate_the_status(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@displayUsersAPI"
+          }
+        ]
+      }
+    ],
+    "name": "Smoke Testing",
+    "description": "",
+    "id": "smoke-testing",
+    "keyword": "Feature",
+    "uri": "src/main/java/features/OnlineBookStore.feature"
+  }
+]
