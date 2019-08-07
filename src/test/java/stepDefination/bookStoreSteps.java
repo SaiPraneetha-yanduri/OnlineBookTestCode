@@ -5,11 +5,12 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import pages.onlineBookPages;
+import ui.pages.onlineBookPages;
+
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matcher.*;
 
-import api.apisbookStore;
+import apis.api.apisbookStore;
 
 
 
@@ -34,7 +35,6 @@ public class bookStoreSteps {
 
 	@Given("^driver path$")
 	public void driver_path() throws Throwable {
-		// Write code here that turns the phrase above into concrete actions
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 	}
 
